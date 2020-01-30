@@ -1,0 +1,26 @@
+<div>
+  <input type="button" value="ADD" class="btn-primary"  />
+  <hr/>
+    <table class="table">
+      <thead>
+        <th>Sn</th>
+        <th>title</th>
+        <th>description</th>
+        <th>tags</th>
+        <th>filename</th>
+        <th></th>
+        <th></th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let media of medialist; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{media.title}}</td>
+          <td>{{media.description}}</td>
+          <td>{{media.tags}}</td>
+          <td>{{media.filename}}</td>
+          <td><input type="button" value="Update" class="btn-warning"  /></td>
+        <td><input type="button" value="Delete" class="btn-danger" /></td>
+
+        </tr>
+      </tbody>
+    </table>
